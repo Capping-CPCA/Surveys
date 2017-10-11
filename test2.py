@@ -1,12 +1,15 @@
 import csv
-#conn = cpcapep.connect(connection)
+#connects to the web server on a port
+#conn = cpcapep.connect(connection,port here)
+#Allows Python code to execute PostgreSQL command in a database session.
 #cursor = conn.cursor()
 csvfile = open("r2.csv","rb")
 
+#Loop that goes through each row and creates an insert statement
 reader = csv.reader(csvfile)
 for row in reader:
 	#r = 0
-	print(row[0]+" - "+row[1]+" - "+row[2])
+	#print(row[0]+" - "+row[1]+" - "+row[2])
 	print "  "
 	#Q1 = row[0]
 	#Q2 = row[1]
